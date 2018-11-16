@@ -1,19 +1,43 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import styled, { createGlobalStyle } from 'styled-components'
+import backgroundImage from '../images/buildings.jpg'
+import Header from '../components/Header'
+import Subheader from '../components/Subheader'
+import Navigation from '../components/Navigation'
 
-import Layout from '../components/layout'
-import Image from '../components/image'
+const GlobalStyle = createGlobalStyle`
+body{
+    padding:0;
+    margin:0;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+`;
+
+const StyledWrapper = styled.div`
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width: 100%;
+    height: 100vh;
+    background-image:url(${backgroundImage});
+    background-size: cover;
+    background-position:center;
+`;
 
 const IndexPage = () => (
-  <Layout>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+  <>
+      <GlobalStyle/>
+      <StyledWrapper>
+            <Header>hello milosz</Header>
+            <Subheader>kaczmarek</Subheader>
+            <Navigation/>
+      </StyledWrapper>
+  </>
 )
 
 export default IndexPage
