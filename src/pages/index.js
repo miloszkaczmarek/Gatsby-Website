@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, { createGlobalStyle } from 'styled-components'
-import backgroundImage from '../images/buildings.jpg'
+import backgroundImage from '../images/applause.jpg'
 import Header from '../components/Header'
 import Subheader from '../components/Subheader'
 import Navigation from '../components/Navigation'
@@ -9,6 +9,8 @@ const GlobalStyle = createGlobalStyle`
 body{
     padding:0;
     margin:0;
+    @import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700&subset=latin-ext');
+    font-family: 'Titillium Web';
 }
 
 *, *::before, *::after{
@@ -29,12 +31,13 @@ const StyledWrapper = styled.div`
     background-position:center;
 `;
 
+
 const IndexPage = () => (
   <>
       <GlobalStyle/>
       <StyledWrapper>
-            <Header>hello milosz</Header>
-            <Subheader>kaczmarek</Subheader>
+        <Header>Wybierz interesujący Cię</Header>
+            <Subheader>festiwal</Subheader>
             <Navigation/>
       </StyledWrapper>
   </>

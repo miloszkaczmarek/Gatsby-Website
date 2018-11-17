@@ -11,6 +11,12 @@ const NavigationWrapper = styled.ul`
 const NavigationItem = styled.li`
   margin-right: 15px;
   color:white;
+  font-size:1.5em;
+  transition:1s;
+  
+  &:hover{
+    font-size: 1.6em;
+  }
 `;
 
 const StyledLink = styled(Link)`
@@ -21,13 +27,13 @@ const StyledLink = styled(Link)`
 const Navigation = () => (
   <NavigationWrapper>
       <NavigationItem>
-        <StyledLink to={'/first'}>First</StyledLink>
+        <StyledLink to={'/opener'}>Open'er</StyledLink>
       </NavigationItem>
       <NavigationItem>
-        <StyledLink to={'#'}>Second</StyledLink>
+        <StyledLink to={'#'}>Kemp</StyledLink>
       </NavigationItem>
       <NavigationItem>
-        <StyledLink to={'#'}>Third</StyledLink>
+        <StyledLink to={'#'}>Live Festiwal</StyledLink>
       </NavigationItem>
   </NavigationWrapper>
 );
