@@ -1,11 +1,12 @@
 import React from 'react'
-import SlideKemp from '../components/SlideKemp'
+import Slide from '../components/Slide'
 import styled, { createGlobalStyle } from 'styled-components'
 import Header from '../components/Header'
 import Subheader from '../components/Subheader'
 import Description from '../components/Description'
 import Button from '../components/Button'
 import { Link } from 'gatsby'
+import backgroundImage from '../images/kemp.jpg'
 
 const GlobalStyle = createGlobalStyle`
 body{
@@ -39,10 +40,10 @@ const IndexPage = () => (
   <>
       <GlobalStyle/>
     <StyledWrapper>
-      <SlideKemp>
+      <Slide source={backgroundImage}>
         <Header>Hip-Hop Kemp</Header>
         <Subheader style={{fontSize: "35px"}}>14-18 SIERPNIA 2019</Subheader>
-      </SlideKemp>
+      </Slide>
     </StyledWrapper>
     <Description>
       <p>Międzynarodowy festiwal, koncentrujący się głównie na kulturze hip-hopowej. Festiwal odbywa się corocznie w sierpniu w Czechach. Od pierwszej edycji oprócz koncertów odbywają się także pokazy oraz szkółki breakdance, graffiti, i beatboxu.

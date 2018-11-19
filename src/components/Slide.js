@@ -1,12 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-import backgroundImage from '../images/livefestival.jpg'
 
 
 const SlideLive = styled.div`
   width:100%;
   height:500px;
-  background-image:url(${backgroundImage});
+  background-image:url(${props => props.source});
   background-position:center;
   background-size:cover;
   display: flex;
