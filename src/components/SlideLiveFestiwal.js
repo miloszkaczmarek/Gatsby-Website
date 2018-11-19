@@ -1,8 +1,9 @@
+import React from 'react'
 import styled from 'styled-components'
-import backgroundImage from '../images/opener.jpg'
+import backgroundImage from '../images/livefestival.jpg'
 
 
-const Slide = styled.div`
+const SlideLive = styled.div`
   width:100%;
   height:500px;
   background-image:url(${backgroundImage});
@@ -14,4 +15,4 @@ const Slide = styled.div`
   align-items:center;
 `;
 
-export default Slide;
+export default SlideLive;

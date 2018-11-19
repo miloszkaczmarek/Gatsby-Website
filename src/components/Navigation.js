@@ -30,10 +30,10 @@ const Navigation = () => (
         <StyledLink to={'/opener'}>Open'er</StyledLink>
       </NavigationItem>
       <NavigationItem>
-        <StyledLink to={'#'}>Kemp</StyledLink>
+        <StyledLink to={'/kemp'}>Kemp</StyledLink>
       </NavigationItem>
       <NavigationItem>
-        <StyledLink to={'#'}>Live Festiwal</StyledLink>
+        <StyledLink to={'/livefestiwal'}>Live Festiwal</StyledLink>
       </NavigationItem>
   </NavigationWrapper>
 );
