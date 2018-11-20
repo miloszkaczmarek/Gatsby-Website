@@ -52,7 +52,7 @@ const IndexPage = () => (
       <h3>DO FESTIWALU POZOSTAŁO:</h3>
       <Countdown date={`${year}-08-17`}/>
       <p>Kraków Live Festival to dwudniowy festiwal muzyczny w Krakowie organizowany przez Alter Art. W przestrzeni przeznaczonej na festiwal co roku powstają dwie sceny muzyczne, miasteczko gastronomiczne oraz miejsce działań około-muzycznych. Line-up festiwalu opiera się na wykonawcach światowego formatu, jak i starannie wyselekcjonowanej grupie polskich artystów. Festiwal co roku przyciąga kilkadziesiąt tysięcy fanów muzyki i jest swoistym zakończeniem sezonu festiwalowego w Polsce. Duży nacisk w pozamuzycznej ofercie festiwalu położony jest na umożliwienie festiwalowiczom korzystania z bogatej oferty kulturalnej miasta Kraków. W ramach działań około-festiwalowych co roku podejmowana jest współpraca z lokalnymi instytucjami kultury takimi jak: Muzeum Narodowe w Krakowie, MOCAK - Muzeum Sztuki Współczesnej, Muzeum Historyczne, Cricoteka.</p>
-      <Button>zamów bilety</Button>
+      <a href='http://livefestival.pl/pl' target='_blank'><Button>zamów bilety</Button></a>
       <StyledLink to={'/'}>powrót</StyledLink>
     </Description>
   </>

@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
-/**
- * Note :
- * If you're using react v 15.4 or less
- * You can directly import PropTypes from react instead.
- * Refer to this : https://reactjs.org/warnings/dont-call-proptypes.html
- */
+const Span = styled.span`
+  padding: 0 5px;
+`;
 
 class Countdown extends Component {
   constructor(props) {
@@ -88,14 +86,14 @@ class Countdown extends Component {
         <span className="Countdown-col">
           <span className="Countdown-col-element">
               <strong>{this.addLeadingZeros(countDown.days)}</strong>
-              <span>{countDown.days === 1 ? 'Day' : 'Days'}</span>
+              <Span>{countDown.days === 1 ? 'Day' : 'Days'}</Span>
           </span>
         </span>
 
         <span className="Countdown-col">
           <span className="Countdown-col-element">
             <strong>{this.addLeadingZeros(countDown.hours)}</strong>
-            <span>Hours</span>
+            <Span>Hours</Span>
           </span>
         </span>
 
@@ -103,14 +101,14 @@ class Countdown extends Component {
         <span className="Countdown-col">
           <span className="Countdown-col-element">
             <strong>{this.addLeadingZeros(countDown.min)}</strong>
-            <span>Min</span>
+            <Span>Min</Span>
           </span>
         </span>
 
         <span className="Countdown-col">
           <span className="Countdown-col-element">
             <strong>{this.addLeadingZeros(countDown.sec)}</strong>
-            <span>Sec</span>
+            <Span>Sec</Span>
           </span>
         </span>
       </div>
