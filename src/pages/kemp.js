@@ -1,6 +1,6 @@
 import React from 'react'
 import Slide from '../components/Slide'
-import styled, { createGlobalStyle } from 'styled-components'
+import styled from 'styled-components'
 import Header from '../components/Header'
 import Subheader from '../components/Subheader'
 import Description from '../components/Description'
@@ -8,24 +8,8 @@ import Button from '../components/Button'
 import { Link } from 'gatsby'
 import backgroundImage from '../images/kemp.jpg'
 import Countdown from '../components/Countdown'
+import Layout from '../layout/Layout'
 
-const GlobalStyle = createGlobalStyle`
-body{
-    padding:0;
-    margin:0;
-    @import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700&subset=latin-ext');
-    font-family: 'Titillium Web';
-}
-
-*, *::before, *::after{
-    box-sizing: border-box;
-}
-
-`;
-
-const StyledWrapper = styled.div`
-  
-`;
 
 const StyledLink = styled(Link)`
   color:black;
@@ -41,13 +25,11 @@ const year = new Date().getFullYear() + 1;
 
 const IndexPage = () => (
   <>
-      <GlobalStyle/>
-    <StyledWrapper>
+    <Layout>
       <Slide source={backgroundImage}>
         <Header>Hip-Hop Kemp</Header>
         <Subheader style={{fontSize: "35px"}}>14-18 SIERPNIA 2019</Subheader>
       </Slide>
-    </StyledWrapper>
     <Description>
       <h3>DO FESTIWALU POZOSTAŁO:</h3>
       <Countdown date={`${year}-08-14`}/>
@@ -57,6 +39,7 @@ const IndexPage = () => (
       <a href="https://joystore.pl/pl/buy/1913464" target='_blank'><Button>zamów bilety</Button></a>
       <StyledLink to={'/'}>powrót</StyledLink>
     </Description>
+    </Layout>
   </>
 );
 
